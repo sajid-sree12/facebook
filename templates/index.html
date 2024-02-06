@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    {% if Hero %}
+    <h2>{{ Hero | truncatechars:27  }} .... Bagunava....!!! Ni age Yentha?- {{ age }}</h2>
+    {% elif age %}
+    <h1>Your age is {{ age }}</h1>
+    {% endif %}
+
+    {% for i in sequence %}
+    <h2>{{ i }}</h2>
+    {% endfor %}
+</body>
+</html>
